@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0}
+body{ font-size:14px;}
+ul li{ list-style:none}
+a{ text-decoration:none; color:#999; }
+/*<!--头部开始-->*/
+.head{ width:100%; height:60px; position:absolute ; z-index:10}
+.head-wrap{ width:1210px; height:60px; margin:0 auto; }
+.logo{ width:570px; height:60px;  float:left}
+.logo h1{ width:222px; height:60px; float:left}
+.logo h1 img{ float:left; margin-top:18px}
+.logo span{ width:44px; height:35px; float:left; display:block; font-size:14px; line-height:14px; margin-top:25px; background:url(../image/down.png) no-repeat 30px 3px}
+.logo span:hover{ background:url(../image/up.png) no-repeat 30px 0px; color:#F00 }
+/*顶部栏*/
+.nav{ width:510px; height:35px; float:left; padding:25px 20px 0px 15px}
+.nav a{ width:510px; height:35px;font-size:14px; line-height:14px; margin-right:20px; text-decoration:none; }
+.nav a:hover{ color:#F00}
+/*登陆*/
+.dl{ width:95px; height:35px; float:left; padding-top:25px}
+.zc{ float:left;}
+.dl a:hover{ color:#F00}
+/*--头部结束--*/
+/*--banner开始--*/
+.banner{width:100%; height:720px;  background:url(../image/banner.jpg) no-repeat top center;z-index:5; position: relative; top:0px; left:0px}
+.banner1{ width:100%; height:720px; display:block; float:left}
+.search{ width:862px; height:50px;  position: absolute; top:290px; left:50%; margin-left:-431px; line-height:50px; }
+.banner .search input{ width:530px; height:50px; border:none; padding-left:8px; color:#999; font-size:16px;float:left}
+.banner .search a{ color:#FFF; font-size:18px; text-align:center;}
+.search .sou{ width:147px; height:50px; background:#ff5a37; display:inline-block; margin-right:20px;float:left}
+.search .mai{ width:150px; height:50px; background:#ff9000;display:inline-block}
+/*汽车数量*/
+.banner .shuliang{ width:100%; text-align:center; position:absolute; top:382px; font-size:22px}
+/*汽车类目*/
+.banner .category{ width:1208px; height:284px; background:#FFF; border:1px #ebebeb solid; position:absolute;top:435px; left:50%; margin-left:-604px}
+.banner .brand{ width:608px;float:left}
+.banner .brand div{ width:583px; height:194px; border-right:1px #ebebeb solid; padding:27px 0px 0px 25px}
+.banner .brand img{ width:44px; height:44px; margin-bottom:7px}
+.banner .brand a{ padding:0px 24px; width:44px; height:80px; display:inline-block; text-align:center ; margin-bottom:16px}
+
+/*价格*/
+.banner .price{ width:300px; float:left}
+.banner .price div{ width:240px; height:181px; border-right:1px #ebebeb solid; padding:20px 30px}
+.banner .price a{ width:80px; height:60px; text-align:center; display:inline-block; line-height:60px}
+.banner .price .shoufu{ color:#F00; }
+.banner .price a:hover{ color:#00C}
+/*品牌*/
+.banner .modal{ width:300px; float:left}
+.banner .modal div{ width:261px; height:186px; padding:25px 20px 0px 20px}
+.banner .modal img{ width:60px; height:60px; }
+.banner .modal a{ width:60px; height:80px; text-align:center; line-height:20px; display:inline-block; padding:0px 12px}
+.banner .category h3{ width:100%; border-bottom:1px #ebebeb solid;height:62px; font-weight:normal; text-align:center; line-height:62px; color:#666}
+.banner .modal a:hover{ color:#F00}
+/*--banner结束-*/
+/*付一半开始*/
+.halfcar{ width:1210px; height:463px; margin:39px auto 0px auto; }
+.halfcar .halfcar2{ width:1210px; height:38px; border-bottom:1px solid #ebebeb; background:#FFF; line-height:38px;}
+.halfcar .halfcar2 h2{ float:left; font-weight:normal}
+.halfcar .halfcar2 span{ font-size:18px; margin-left:40px; }
+.halfcar .halfcar2 span:hover{ border-bottom:2px solid #ff6600}
+.halfcar .halfcar2 span.on{ border-bottom:2px solid #ff6600}
+.halfcar .halfcar2 strong a{ float:right; color:#F00}
+.halfcar .halfcar2 strong a:hover{ text-decoration:underline;}
+
+/*内容*/
+.halfcar .halfcar3{ width:1210px; height:330px;}
+.halfcar .halfcar3 ul li{ width:343px; height:97px; float:left; list-style:none; margin-top:37px; font-weight:normal; margin-bottom:35px;margin-right:90px}
+.halfcar .halfcar3 li img{ width:195px; height:124px; float:right;  }
+.halfcar .halfcar3 li a:hover{}
+.halfcar .halfcar3 li h3{ width:110px; float: left; font-size:18px; padding-top:20px}
+.halfcar .halfcar3 li p{ width:110px; float: left;}
+.halfcar .halfcar3 li span{  font-size:36px; color:#ff5a37}
+.halfcar .halfcar3 li.r{ margin-right:0px}
+
+/*底部栏*/
+.halfcar .halfcar4{ width:1210px; height:70px; background:url(../image/home-carnum.jpeg); margin:0 auto; padding-top:24px; }
+.halfcar .halfcar4 ul li{ float:left; width:358px; height:54px; padding-left:45px; text-align:center; background:url(../image/home_bg01.png) no-repeat right top; color:#FFF}
+.halfcar .halfcar4 ul p{ float:left; font-size:14px }
+.halfcar .halfcar4 ul h3{ float:left; font-weight:normal; font-size:18px;}
+.halfcar .halfcar4 span{ width:49px; height:49px; display:block; border:1px solid #FFF; border-radius:50%; text-align:center; line-height:49px; float:left; margin-right:12px; font-size:16px; color:#FFF}
+.halfcar .halfcar4:hover{ color:#fff}
+
+/*优信推荐开始*/
+.tuijian{ width:1210px; height:320px; margin:0 auto;margin-top:57px; }
+.tuijian .tuijian2{ width:1210px; height:38px; border-bottom:1px solid #ebebeb; background:#FFF; line-height:38px;; float:left; }
+
+/*顶部栏*/
+.tuijian .tuijian2 h2{ float:left; font-weight:normal}
+.tuijian .tuijian2 span{ font-size:18px; margin-left:40px; }
+.tuijian .tuijian2 span:hover{ border-bottom:2px solid #ff6600}
+.tuijian .tuijian2 span.on{ border-bottom:2px solid #ff6600}
+.tuijian .tuijian2 strong a{ float:right; color:#F00}
+.tuijian .tuijian2 strong a:hover{ text-decoration:underline;}
+
+/*内容*/
+.tuijian .tuijian3{ width:100%; height:260px; padding-top:20px; margin-right:8px; float:left ; margin:0 auto}
+.tuijian .tuijian3 dl{ width:295px; height:250px; float:left; margin-right:7px; border:1px #ebebeb solid}
+.tuijian .tuijian3 dd h{ float:left; line-height:53px; font-size:16px; margin-left:19px;}
+.tuijian .tuijian3 dd p{ float:right;line-height:53px; font-size:16px; color:#F00}
+/*优信推荐结束*/
+
+/*全国直购开始*/
+.zg{ width:1210px; height:525px; margin:0px auto; margin-top:75px }
+.zg .zg2{ width:1210px; height:50px; border-bottom:1px solid #ebebeb; background:#FFF; line-height:50px; float:left}
+.zg .zg2 h2{ float:left; font-weight:normal}
+.zg .zg2 strong a{ float:right; color:#F00}
+.zg .zg2 strong a:hover{ text-decoration:underline;}
+.zg .zg3 a{ width:1210px; height:120px; float:left}
+
+.zg .zg4{ width:1210px; height:355px; float:left}
+.zg .zg4 dl{float:left; width:286px; margin-right:21px; margin-top:20px;}
+.zg .zg4 dl h3{ font-size:16px; margin-top:8px;font-weight:normal; margin-bottom:6px}
+.zg .zg4 dl dt{ position:relative}
+.zg .zg4 dl dd{ height:124px}
+.zg .zg4 dl dt .biaozhi{ width:55px; height:42px; background:url(../image/home-zg.png) no-repeat; position:absolute; top:0px;left:0px; margin-top:-3px}
+.zg .zg4 dl .p1{ margin-bottom:5px}
+.zg .zg4 dl .p2{ margin-bottom:5px;color:#F00; font-size:14px}
+.zg .zg4 dl .p2 span{  font-size:18px; font-weight:600}
+.zg .zg4 dl .p3{ background:url(../image/home-zg1.png) no-repeat left; padding-left:75px
+}
+/*全国直购结束*/
+
+.youxin{ width:1210px; height:122px; margin:0 auto; background:url(../image/%E6%9C%89%E4%BF%A1.jpg)}
+
+/*新闻开始*/
+.news{ width:1210px; height:550px; margin:0px auto; margin-top:50px; background:#f6f6f6; position:relative}
+.news .zuo{ width:480px; height:500px;}
+.news .zuo{ float:left;}
+.news .zuo ul{ margin-left:30px; margin-top:25px}
+.news .zuo ul li a{ font-size:14px; line-height:30px}
+.news .zuo ul li a:hover{ text-decoration:underline; color:#F00}
+.news .redian{ width:60px; height:30px; background:#ff5a38; position: absolute; top:10px;left:-18px; line-height:30px; text-align:center; font-size:14px; color:#FFF}
+
+.news .you1{ width:670px; height:230px;  float:right; margin-bottom:30px}
+.news .you1 img{float:left; margin-right:30px}
+.news .you1 h3 { height:40px; margin-top:30px; padding-left:280px}
+.news .you1{ padding-right:30px}
+.news .you1 a:hover{}
+.news .baodian{ width:60px; height:30px; background:#389fff; position: absolute; top:10px;left:490px; line-height:30px; text-align:center; font-size:14px; color:#FFF}
+
+.news .you2{ width:670px; height:240px; float:right; }
+.news .you2 img{float:left; margin-right:30px}
+.news .you2 h3 { height:40px; margin-top:30px; padding-left:280px}
+.news .you2{ padding-right:30px}
+.news .you2 a:hover{}
+.news .wenzhang{ width:60px; height:30px; background:#2ecbac; position: absolute; top:270px;left:490px; line-height:30px; text-align:center; font-size:14px; color:#FFF}
+/*新闻结束*/
+
+/*消费者故事开始*/
+.xiaofei{ width:1210px; height:900px; background:url(../image/map.png) no-repeat top center; margin:0 auto;text-align:center ; position:relative;}
+.xiaofei h2{ margin-top:50px;}
+.xiaofei span{ font-size:12px; color:#666666;}
+.xiaofei .xiaofei1{ width:462px; height:110px; text-align:center; border:1px #CCCCCC solid; background:#FFF}
+.xiaofei .xiaofei1 img{ border-radius:50%; margin-top:15px; float:left; margin-left:20px}
+.xiaofei .xiaofei1 a{ width:350px; height:80px; float:left; display:inline-block; margin-top:20px;}
+.xiaofei .xiaofei1{ position:absolute; top:150px; left:300px;}
+.xiaofei .xiaofei1 .a1{ position:absolute; top:97px; left:23px}
+
+.xiaofei .xiaofei2{ width:462px; height:110px; text-align:center; border:1px #CCCCCC solid; background:#FFF}
+.xiaofei .xiaofei2 img{ border-radius:50%; margin-top:15px; float:left; margin-left:20px}
+.xiaofei .xiaofei2 a{ width:350px; height:80px; float:left; display:inline-block; margin-top:20px;}
+.xiaofei .xiaofei2{ float:right; position:absolute; top:280px; left:700px}
+.xiaofei .xiaofei2 .a2{position:absolute; top:97px; left:23px}
+
+.xiaofei .xiaofei3{ width:462px; height:110px; text-align:center; border:1px #CCCCCC solid; background:#FFF }
+.xiaofei .xiaofei3 img{ border-radius:50%; margin-top:15px; float:left; margin-left:20px}
+.xiaofei .xiaofei3 a{ width:350px; height:80px; float:left; display:inline-block; margin-top:20px;}
+.xiaofei .xiaofei3{ float:right; position:absolute; top:50px; left:800px}
+.xiaofei .xiaofei3 .a3{position:absolute; top:97px; left:23px}
+
+.xiaofei .xiaofei4{ width:453px; height:110px; text-align:center; border:1px #CCCCCC solid; padding-left:10px; background:#FFF}
+.xiaofei .xiaofei4 img{ border-radius:50%; margin-top:15px; float:right; margin-right:20px}
+.xiaofei .xiaofei4 a{ width:350px; height:80px; float:left; display:inline-block; margin-top:20px;}
+.xiaofei .xiaofei4{ float:right; position:absolute; top:350px; left:100px}
+.xiaofei .xiaofei4 .a4{position:absolute; top:97px; left:390px}
+
+.xiaofei .xiaofei5{ width:453px; height:110px; text-align:center; border:1px #CCCCCC solid;  padding-left:10px; background:#FFF}
+.xiaofei .xiaofei5 img{ border-radius:50%; margin-top:15px; float:right; margin-right:20px}
+.xiaofei .xiaofei5 a{ width:350px; height:80px; float:left; display:inline-block; margin-top:20px;}
+.xiaofei .xiaofei5{ float:right; position:absolute; top:500px; left:330px}
+.xiaofei .xiaofei5 .a5{position:absolute; top:97px; left:390px}
+/*消费者故事结束*/
+
+
+.guanyu{ width:100%; height:154px; background:#444444; padding:0px 139px; border-bottom:1px solid #515151}
+.guanyu a{ float:left; margin-right:30px; color:#FFF; margin-top:65px;}
+.guanyu p{ float:left; margin-top:55px; margin-left:10px}
+.guanyu img{ float:left; margin-top:30px; margin-left:50px}
+
+.last{width:100%; height:112px; background:#444444; padding:0px 139px; border-bottom:1px solid #515151; padding-top:25px}
+.last a{ float:left; margin-right:23px;  }
+.last span{ float:left; margin-right:20px }
+.dibu{width:100%; height:97px; background:#444444; padding:0px 139px; border-bottom:1px solid #FFF; padding-top:20px; position:absolute}
+.dibu a{ line-height:25px}
+.dibu .q1{ float:right; position:absolute; top:40px; left:900px; margin-right:20px}
+.dibu .q2{ float:right; position:absolute; top:40px; left:1035px; margin-right:20px}
+.dibu .q3{ float:right; position:absolute; top:40px; left:1170px; margin-right:20px}
