@@ -6,18 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>niushiyi | niu</title>
+  <title>闭包现象 | niu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Quick StartCreate a new post1$ hexo new &quot;My New Post&quot; toc:true">
+  <meta name="description" content="在一个函数内部，有权访问另一个函数中的变量（并且能够随时访问）！ 尽量不要去看长篇大论关于闭包的解释，很容易把自己绕晕。看一些很容易理解的例子帮助你更好的理解闭包才是最好的！##闭包 一 : 访问变量局限性大，不能自由访问。12345678function show1() &amp;#123;         var a = 10;        function show2() &amp;#123;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="niushiyi">
-<meta property="og:url" content="http://yoursite.com/2017/12/28/me/index.html">
+<meta property="og:title" content="闭包现象">
+<meta property="og:url" content="http://yoursite.com/2017/12/29/bibao/index.html">
 <meta property="og:site_name" content="niu">
-<meta property="og:description" content="Quick StartCreate a new post1$ hexo new &quot;My New Post&quot; toc:true">
-<meta property="og:updated_time" content="2017-12-29T05:50:23.320Z">
+<meta property="og:description" content="在一个函数内部，有权访问另一个函数中的变量（并且能够随时访问）！ 尽量不要去看长篇大论关于闭包的解释，很容易把自己绕晕。看一些很容易理解的例子帮助你更好的理解闭包才是最好的！##闭包 一 : 访问变量局限性大，不能自由访问。12345678function show1() &amp;#123;         var a = 10;        function show2() &amp;#123;">
+<meta property="og:updated_time" content="2017-12-29T06:20:40.599Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="niushiyi">
-<meta name="twitter:description" content="Quick StartCreate a new post1$ hexo new &quot;My New Post&quot; toc:true">
+<meta name="twitter:title" content="闭包现象">
+<meta name="twitter:description" content="在一个函数内部，有权访问另一个函数中的变量（并且能够随时访问）！ 尽量不要去看长篇大论关于闭包的解释，很容易把自己绕晕。看一些很容易理解的例子帮助你更好的理解闭包才是最好的！##闭包 一 : 访问变量局限性大，不能自由访问。12345678function show1() &amp;#123;         var a = 10;        function show2() &amp;#123;">
   
     <link rel="alternative" href="/atom.xml" title="niu" type="application/atom+xml">
   
@@ -157,28 +157,36 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-me" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-bibao" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      niushiyi
+      闭包现象
     </h1>
   
 
         
-        <a href="/2017/12/28/me/" class="archive-article-date">
-  	<time datetime="2017-12-28T06:20:01.038Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-28</time>
+        <a href="/2017/12/29/bibao/" class="archive-article-date">
+  	<time datetime="2017-12-29T06:15:52.568Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>toc:true</p>
+        <ul>
+<li>在一个函数内部，有权访问另一个函数中的变量（并且能够随时访问）！</li>
+<li>尽量不要去看长篇大论关于闭包的解释，很容易把自己绕晕。看一些很容易理解的例子帮助你更好的理解闭包才是最好的！<br>##闭包 一 : 访问变量局限性大，不能自由访问。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function show1() &#123;</span><br><span class="line">         var a = 10;</span><br><span class="line">        function show2() &#123;</span><br><span class="line">           console.log(a)</span><br><span class="line">         &#125;</span><br><span class="line">  show2();</span><br><span class="line">&#125;</span><br><span class="line">show1();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>##闭包 二 : 可以自由访问。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function show() &#123;</span><br><span class="line">         var a = 10;</span><br><span class="line">          return:  function() &#123;</span><br><span class="line">           console.log(a)</span><br><span class="line">         &#125;</span><br><span class="line">&#125;</span><br><span class="line">show()();</span><br></pre></td></tr></table></figure></p>
+<p>##常见闭包一般出现在DOM节点操作中，看下面典型例子！<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">为每一个li添加点击事件，并且弹出他所在ul中的位置。</span><br><span class="line"></span><br><span class="line">&lt;ul id=&quot;list&quot;&gt;</span><br><span class="line">    &lt;li&gt;aaa&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;aaa&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;aaa&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">var  lis=document.getElementById(&quot;list&quot;).getElementsByTagName(&quot;li&quot;);</span><br><span class="line">for(var i=0;i&lt;lis.length;i++)&#123;</span><br><span class="line">   lis[i]._index=i;//为每个li添加一个属性并且保存他的所在的位置。</span><br><span class="line">   lis[i].onclick=function()&#123;</span><br><span class="line">          alert(i)//无论你点那个，弹出的都是3!</span><br><span class="line">         alert(this._index);//可以弹出相应的位置!this指你事件触发者.即你点击的 li !</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>##其实闭包现象随处可见，虽然他很容易出问题且不容易调试</p>
+<p>##所以你也可以去试试啦，听着很牛逼的闭包，其实也没什么，哈哈哈哈。。。。</p>
 
       
 
@@ -237,7 +245,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/28/me/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2017/12/29/bibao/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -251,17 +259,8 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/12/29/bibao/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          闭包现象
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/12/25/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/12/28/me/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">niushiyi</div>
       <i class="icon-circle-right"></i>
     </a>
