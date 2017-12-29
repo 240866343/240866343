@@ -185,9 +185,7 @@
 <p>常见闭包一般出现在DOM节点操作中，看下面典型例子！</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">为每一个li添加点击事件，并且弹出他所在ul中的位置。</span><br><span class="line"></span><br><span class="line">&lt;ul id=&quot;list&quot;&gt;</span><br><span class="line">    &lt;li&gt;aaa&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;aaa&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;aaa&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">var  lis=document.getElementById(&quot;list&quot;).getElementsByTagName(&quot;li&quot;);</span><br><span class="line">for(var i=0;i&lt;lis.length;i++)&#123;</span><br><span class="line">   lis[i]._index=i;//为每个li添加一个属性并且保存他的所在的位置。</span><br><span class="line">   lis[i].onclick=function()&#123;</span><br><span class="line">          alert(i)//无论你点那个，弹出的都是3!</span><br><span class="line">         alert(this._index);//可以弹出相应的位置!this指你事件触发者.即你点击的 li !</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
-<p>其实闭包现象随处可见，虽然他很容易出问题且不容易调试</p>
-<p>所以你也可以去试试啦，听着很牛逼的闭包，其实也没什么，哈哈哈哈。。。。</p>
-
+<h2 id="其实闭包现象随处可见，虽然他很容易出问题且不容易调试"><a href="#其实闭包现象随处可见，虽然他很容易出问题且不容易调试" class="headerlink" title="其实闭包现象随处可见，虽然他很容易出问题且不容易调试"></a>其实闭包现象随处可见，虽然他很容易出问题且不容易调试</h2><h2 id="所以你也可以去试试啦，听着很牛逼的闭包，其实也没什么，哈哈哈哈。。。。"><a href="#所以你也可以去试试啦，听着很牛逼的闭包，其实也没什么，哈哈哈哈。。。。" class="headerlink" title="所以你也可以去试试啦，听着很牛逼的闭包，其实也没什么，哈哈哈哈。。。。"></a>所以你也可以去试试啦，听着很牛逼的闭包，其实也没什么，哈哈哈哈。。。。</h2>
       
 
       
